@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="max" translate="label" sortOrder="10">
+            <label>Max</label>
+        </tab>
+        <section id="products" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Info</label>
+            <tab>max</tab>
+            <resource>Max_TestTask::config</resource>
+            <group id="info" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Info Settings</label>
+                <field id="name" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Name</label>
+                    <comment>Enter your name</comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="email" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email</label>
+                    <comment>Enter your email</comment>
+                    <validate>required-entry validate-email</validate>
+                </field>
+                <field id="phone" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                     <label>Phone</label>
+                     <comment>Enter your phone number</comment>
+                     <validate>required-entry validate-digits</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

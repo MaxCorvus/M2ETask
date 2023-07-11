@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Max_TestTask::products" title="Max Products" module="Max_TestTask" sortOrder="20"
+             resource="Max_TestTask::products"/>
+        <add id="Max_TestTask::info" title="Info" module="Max_TestTask" sortOrder="20"
+             resource="Max_TestTask::products" action="products/index/info" parent= "Max_TestTask::products"/>
+        <add id="Max_TestTask::list" title="Products" module="Max_TestTask" sortOrder="20"
+             resource="Max_TestTask::products" action="products/index/listing" parent= "Max_TestTask::products"/>
+    </menu>
+</config>
